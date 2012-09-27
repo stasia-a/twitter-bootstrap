@@ -1,0 +1,31 @@
+!!!
+%html
+  %head
+    %title AssetPipeline
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+      = csrf_meta_tags
+  %body
+    .container
+      .navbar
+        .navbar-inner
+          %a.brand{:href => "#"} My brand
+          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          .nav-collapse
+            %ul.nav
+              %li.active
+                %a{:href => "#"} Home
+              %li
+                %a{:href => "#"} About
+              %li
+                %a{:href => "#"} New link
+          .pull-right
+            %form.form-search
+              .input-append
+                %input.span2.search-query{:type => "text"}
+                  %button.btn{:type => "submit"} Search
+      = yield

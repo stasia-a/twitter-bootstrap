@@ -1,0 +1,34 @@
+.row
+  .span6
+    = image_tag ("sales-increase.png")
+  .span6
+    = image_tag ("such-a-crap.png")
+#example.modal.hide.fade.in{:style => "display: none; "}
+  .modal-header
+    %a.close{"data-dismiss" => "modal"} ×
+    %h3 This is a Modal Heading
+  .modal-body
+    %h4 Welcome
+    = image_tag("ripIE.jpg")
+  .modal-footer
+    %a.btn.btn-success{:href => "#"} Call to action
+    %a.btn{"data-dismiss" => "modal", :href => "#"} Close
+#example1.modal.hide.fade.in{:style => "display: none; "}
+  .modal-header
+    %a.close{"data-dismiss" => "modal"} ×
+    %h3 Go to
+  .modal-body
+    %h4 Text in a modal
+    %p Looking for it by yourself!!!
+  .modal-footer
+    %a.btn.btn-success{:href => "#"} Call to action
+    %a.btn{"data-dismiss" => "modal", :href => "#"} Close
+.btn-group
+  %a.btn.btn-primary.btn-large{"data-toggle" => "modal", :href => "#example"}
+    More fun
+    %i.icon-align-left
+  %a.btn.btn-primary.btn-large{"data-toggle" => "modal", :href => "#example1"}
+    More?
+    %i.icon-align-center
+%script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"}
+%script{:src => "assets/twitter-bootstrap/bootstrap-modal.js"}
