@@ -11,9 +11,41 @@
   </div>
 </div>
 
-<div class="btn-group">
 
-  <a class="btn" href="#">Welcome<i class="icon-align-left"></i></a>
-  <a class="btn" href="#">Go to<i class="icon-align-center"></i></a>
-  <a class="btn" href="#">Goodbye<i class="icon-align-right"></i></a>
+
+<div id="example" class="modal hide fade in" style="display: none; ">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>This is a Modal Heading</h3>
+  </div>
+  <div class="modal-body">
+    <h4>Welcome</h4>
+    <p>You can add some text here.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-success">Call to action</a>
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
 </div>
+
+<div id="example1" class="modal hide fade in" style="display: none; ">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Go to</h3>
+  </div>
+  <div class="modal-body">
+    <h4>Text in a modal</h4>
+    <p>You can add some text here.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-success">Call to action</a>
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
+
+  <div class="btn-group">
+<a data-toggle="modal" href="#example" class="btn btn-primary btn-large">Welcome<i class="icon-align-left"></i></a>
+<a data-toggle="modal" href="#example" class="btn btn-primary btn-large">Go to<i class="icon-align-center"></i></a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="assets/twitter-bootstrap/bootstrap-modal.js"></script>
