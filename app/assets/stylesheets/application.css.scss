@@ -1,2 +1,11 @@
+
 @import 'twitter-bootstrap/bootstrap.scss';
 @import 'twitter-bootstrap/responsive.scss';
+@import 'twitter-bootstrap/bootstrap_and_overrides.css.scss';
+
+.icon-align-left{
+  background-image: url(/assets/twitter-bootstrap/glyphicons-halflings-white.png) };
+.icon-align-right{
+  background-image: url(/assets/twitter-bootstrap/glyphicons-halflings-white.png) };
+.icon-align-center{
+  background-image: url(/assets/twitter-bootstrap/glyphicons-halflings.png) };
